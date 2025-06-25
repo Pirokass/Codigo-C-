@@ -4,13 +4,13 @@
 
 using namespace std;
 
-// Estructura para representar una tarea
+
 struct Tarea {
     string descripcion;
     bool completada;
 };
 
-// Función para agregar una tarea
+
 void agregarTarea(vector<Tarea>& tareas) {
     Tarea nueva;
     cout << "Ingrese la descripcion de la tarea: ";
@@ -20,7 +20,7 @@ void agregarTarea(vector<Tarea>& tareas) {
     cout << "Tarea agregada exitosamente.\n";
 }
 
-// Función para listar las tareas
+
 void listarTareas(const vector<Tarea>& tareas) {
     if (tareas.empty()) {
         cout << "No hay tareas registradas.\n";
@@ -33,7 +33,7 @@ void listarTareas(const vector<Tarea>& tareas) {
     }
 }
 
-// Función para marcar una tarea como completada
+
 void completarTarea(vector<Tarea>& tareas) {
     if (tareas.empty()) {
         cout << "No hay tareas para completar.\n";
@@ -51,7 +51,7 @@ void completarTarea(vector<Tarea>& tareas) {
     cout << "Tarea marcada como completada.\n";
 }
 
-// Menú principal
+
 void menu() {
     vector<Tarea> tareas;
     int opcion;
